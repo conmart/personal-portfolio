@@ -1,1 +1,129 @@
 /* custom styles */
+nav {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin: 0 50px;
+  text-decoration: none;
+  color: #c7d3e8;
+  text
+}
+
+
+header {
+  text-align: center;
+  /*background: url('http://shefdomi.com/wp-content/uploads/2014/05/bg-2-full1.jpg');*/
+  background-image: url('../../assets/imgs/luca-bravo-207676.jpg');
+  background-size: 100% auto;
+}
+
+
+img {
+
+}
+
+h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  font-family: Acme, sans-serif;
+  color: black;
+  font-size: 40px;
+  margin: 0;
+  padding: 15px;
+}
+
+body {
+
+}
+
+
+
+li {
+  font-size: 25px;
+}
+
+a {
+  color: inherit;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+
+.nav-bar {
+  text-align: center;
+}
+
+.page-wrapper {
+
+}
+
+.headshot {
+  border-radius: 40px;
+  border: solid;
+  border-color: black;
+  border-width: 5px;
+  height: 300px;
+  width: auto;
+  margin: 150px 0 20px 0;
+}
+
+.my-projects {
+  background-image: url('../../assets/imgs/jordan-gellie-33556.jpg');
+  background-size: 100% auto;
+  /*max-width: 100%;
+  height: auto;*/
+  /*background-color: #cc9a3f;*/
+}
+
+.my-projects img {
+  max-height: 200px;
+  width: auto;
+  border-radius: 30px;
+}
+
+.projects {
+  background-color: rgba(132, 7, 99, .5);
+  color: white;
+}
+
+.display-projects {
+  padding: 15px;
+  background-color: rgba(132, 7, 99, .5);
+}
+
+.display-projects img, h4 {
+  padding: 15px;
+  margin: auto;
+  color: white;
+}
+
+.display-projects div {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info {
+  align-items: center;
+  background-image: url('../../assets/imgs/michal-grosicki-221225.jpg');
+  background-size: 100% auto;
+  color: black;
+  padding-bottom: 100px;
+}
