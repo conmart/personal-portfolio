@@ -10,34 +10,56 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- scripts -->
+
   <!-- jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script src="app.js"></script>
+
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 
 <body>
+
   <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">CM</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- <nav>
     <ul class="nav-bar">
       <li><a href="#">Projects</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
 
   <header>
-
 
     <img class="headshot" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/5/005/02b/146/3f681f8.jpg" alt="Connor headshot">
 
@@ -48,25 +70,63 @@
   </header>
 
   <main>
+    <!-- Opening panel with headshot -->
     <div class="my-projects">
-      <h2 class ="title projects">My Work</h2>
-        <div class="display-projects">
-          <!-- tested layout view with filler div -->
-          <!-- <div>
-            <img src="assets/imgs/favicon.png" alt="test">
-            <h4>Test project title</h4>
-          </div> -->
-        </div>
+      <div class="projects-background">
+      <h2 id="projects">My Work</h2>
 
+
+        <div class="display-projects">
+
+          <!-- <div class="row">
+            <div class="col m3 push-m2 center-align"><img src="assets/imgs/favicon.png"></div>
+
+
+            <div class="row">
+              <div class="col m3 push-m3">
+                <div class="card blue-grey">
+                  <div class="card-content white-text">
+                    <span class="card-title">Title</span>
+                    <p>description</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Go to full project</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+        </div>
+        <div class="bottom-filler"></div>
+      </div>
     </div>
 
+    <!-- About me section -->
+    <div class="about-me" >
+      <div class="about-background">
+        <h2 id="about">About Me</h2>
+        <p>
+          Rural ranch hand turned web developer after a stint in sales, my love for code comes from the combination of complex logic and the ability to build almost anything.  That rush of dopamine from finding an elegant solution to a difficult problem is hard to beat.
+
+          Self proclaimed philosopher, futurist, consumer of art, athlete, human. Also, I like beer.
+
+          Skills: HTML, CSS, JavaScript, MongoDB, Ruby, Rails, PosgreSQL
+        </p>
+      </div>
+    </div>
+
+
+
     <div class="contact-info">
-      <h2>Contact Me</h2>
-        <ul>
-          <li>Connect with me on <a href="https://www.linkedin.com/in/connormartinelli/">LinkedIn</a></li>
-          <li>Visit my <a href="https://www.linkedin.com/in/connormartinelli/">GitHub Page</a> for more of my work</li>
-          <li>Or reach me directly at connor.a.martinelli@gmail.com</li>
-        </ul>
+      <div class="contact-background">
+        <h2 id="contact">Contact Info</h2>
+          <ul>
+            <li>Connect with me on <a href="https://www.linkedin.com/in/connormartinelli/">LinkedIn</a></li>
+            <li>Visit my <a href="https://www.linkedin.com/in/connormartinelli/">GitHub Page</a> for more of my work</li>
+            <li>Or reach me directly at connor.a.martinelli@gmail.com</li>
+          </ul>
+      </div>
     </div>
   </main>
 
