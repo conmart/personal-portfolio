@@ -13,6 +13,7 @@ nav li {
   margin: 0 20px;
   text-decoration: none;
 
+
 }
 
 
@@ -60,10 +61,18 @@ a {
   color: inherit;
 }
 
+li a {
+  text-decoration: underline;
+}
+
 h4 {
   font-size: 25px;
 }
 
+big {
+  color: white;
+  padding-left: 35px;
+}
 
 .nav-bar {
   text-align: center;
@@ -134,11 +143,12 @@ h4 {
 }
 
 .about-me p {
-  margin: 0;
-  padding: 35px;
   font-size: 18px;
   color: white;
-  padding-bottom: 70px;
+}
+
+.about-content{
+  padding: 0 200px 50px 35px;
 }
 
 .about-background {
