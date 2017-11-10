@@ -29,6 +29,8 @@
   <!-- favicon -->
   <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
 
+  <!-- icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -39,10 +41,10 @@
 
 <body>
 
-  <nav>
+  <nav class="hide-on-small-and-down">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">CM</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" class="brand-logo left">CM</a>
+      <ul class="right">
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -50,18 +52,9 @@
     </div>
   </nav>
 
-  <!-- <nav>
-    <ul class="nav-bar">
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav> -->
-
-
   <header>
 
-    <img class="headshot" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/5/005/02b/146/3f681f8.jpg" alt="Connor headshot">
+    <img class="headshot" src="assets/imgs/VertBrickSmall.jpeg" alt="Connor headshot">
 
     <div class="page-wrapper">
       <h1>Connor Martinelli</h1>
@@ -70,53 +63,32 @@
   </header>
 
   <main>
-    <!-- Opening panel with headshot -->
     <div class="my-projects">
       <div class="projects-background">
-      <h2 id="projects">My Work</h2>
+        <div class="display-projects container">
+          <h2 id="projects">My Work</h2>
+          <div class="row project-cards">
 
-
-        <div class="display-projects">
-
-          <!-- <div class="row">
-            <div class="col m3 push-m2 center-align"><img src="assets/imgs/favicon.png"></div>
-
-
-            <div class="row">
-              <div class="col m3 push-m3">
-                <div class="card blue-grey">
-                  <div class="card-content white-text">
-                    <span class="card-title">Title</span>
-                    <p>description</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">Go to full project</a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-
+          </div>
         </div>
-        <div class="bottom-filler"></div>
       </div>
     </div>
 
-    <!-- About me section -->
+
     <div class="about-me" >
       <div class="about-background">
-        <h2 id="about">About Me</h2>
-          <div class="about-content">
-            <p>
-              Rural ranch hand turned web developer after a stint in sales, my love for code comes from the combination of complex logic and the ability to build almost anything.  That rush of dopamine from finding an elegant solution to a difficult problem is hard to beat.
-            </p>
-            <p>
-              Self proclaimed philosopher, futurist, consumer of art, athlete, human. Also, I like beer.
-            </p>
-            <p>
-              Skills: HTML, CSS, JavaScript, MongoDB, Ruby, Rails, PosgreSQL
-            </p>
-          </div>
+        <div class="about-content container">
+          <h2 id="about">About Me</h2>
+          <p>
+            Rural ranch hand turned web developer after a stint in sales, my love for code comes from the combination of complex logic and the ability to build almost anything.  That rush of dopamine from finding an elegant solution to a difficult problem is hard to beat.
+          </p>
+          <p>
+            Self proclaimed philosopher, futurist, consumer of art, athlete, human. Also, I like beer.
+          </p>
+          <p>
+            Skills: HTML, CSS, JavaScript, MongoDB, Ruby, Rails, PosgreSQL
+          </p>
+        </div>
       </div>
     </div>
 
@@ -124,12 +96,14 @@
 
     <div class="contact-info">
       <div class="contact-background">
-        <h2 id="contact">Contact Info</h2>
+        <div class="container">
+          <h2 id="contact">Contact Info</h2>
           <ul>
             <li>Connect with me on <a href="https://www.linkedin.com/in/connormartinelli/">LinkedIn</a></li>
             <li>Visit my <a href="https://www.linkedin.com/in/connormartinelli/">GitHub Page</a> for more of my work</li>
             <li>Or reach me directly at connor.a.martinelli@gmail.com</li>
           </ul>
+        </div>
       </div>
     </div>
   </main>

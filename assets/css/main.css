@@ -12,46 +12,34 @@ nav {
 nav li {
   margin: 0 20px;
   text-decoration: none;
-
-
 }
 
 
 header {
   text-align: center;
   background-image: url('../imgs/luca-bravo-207676.jpg');
-  background-size: 100% auto;
-}
-
-
-img {
-
+  background-size: cover;
 }
 
 h1 {
   font-family: Oswald, sans-serif;
   font-size: 50px;
   letter-spacing: 5px;
-  color: white;
   margin: 0;
   padding: 40px;
   padding-bottom: 70px;
 }
 
+body {
+  color: white;
+}
+
 h2 {
   font-family: Monserrat, sans-serif;
-  color: white;
   font-size: 40px;
+  padding: 25px 0px;
   margin: 0;
-  padding: 35px;
-  padding-top: 40px;
 }
-
-body {
-
-}
-
-
 
 li {
   font-size: 25px;
@@ -66,7 +54,6 @@ h4 {
 }
 
 big {
-  color: white;
   padding-left: 35px;
 }
 
@@ -76,10 +63,6 @@ big {
 
 .brand-logo {
   margin-left: 20px;
-}
-
-.page-wrapper {
-
 }
 
 .headshot {
@@ -94,57 +77,36 @@ big {
 
 .my-projects {
   background-image: url('../imgs/jordan-gellie-33556.jpg');
-  background-size: 100% auto;
+  background-size: cover;
 }
 
-.my-projects img {
+/*.my-projects img {
   max-height: 200px;
   width: auto;
   border: black 5px solid;
   border-radius: 30px;
   margin: auto;
-}
-
-.projects {
-  color: white;
-}
+}*/
 
 .projects-background {
   background-color: rgba(132, 7, 99, .3);
-
 }
 
-.display-projects {
-
-}
 
 .display-projects h4 {
   padding: 15px;
   margin: auto;
-  color: white;
 }
 
-
-
-.bottom-filler {
-  height: 40px;
-  width: auto;
-
-}
 
 .about-me {
   background-image: url('../imgs/lukasz-szmigiel-11413.jpg');
-  background-size: 100% auto;
+  background-size: cover;
 
 }
 
 .about-me p {
   font-size: 18px;
-  color: white;
-}
-
-.about-content{
-  padding: 0 200px 50px 35px;
 }
 
 .about-background {
@@ -154,16 +116,39 @@ big {
 .contact-info {
   align-items: center;
   background-image: url('../imgs/michal-grosicki-221225.jpg');
-  background-size: 100% auto;
-  color: white;
+  background-size: cover;
+}
 
+.contact-info a {
+  text-decoration: underline;
 }
 
 .contact-background {
   background-color: rgba(0, 0, 0, .5);
-  padding-bottom: 100px;
 }
 
-.contact-background ul {
-  padding: 35px;
+.container {
+  padding-bottom: 25px;
+}
+
+.card-title {
+  background: rgba(0,0,0,.5);
+  border-radius: 10px;
+  padding: 10px !important;
+}
+
+.card-content {
+  background: #2d2d2d;
+}
+
+@media (max-width: 600px) {
+
+  .headshot {
+    margin-top: 65px;
+  }
+
+  header h1 {
+    padding: 25px;
+  }
+
 }
