@@ -35,10 +35,13 @@ body {
 }
 
 h2 {
-  font-family: Monserrat, sans-serif;
   font-size: 40px;
   padding: 25px 0px;
   margin: 0;
+}
+
+main {
+  font-family: 'Titillium Web', sans-serif;
 }
 
 li {
@@ -80,13 +83,6 @@ big {
   background-size: cover;
 }
 
-/*.my-projects img {
-  max-height: 200px;
-  width: auto;
-  border: black 5px solid;
-  border-radius: 30px;
-  margin: auto;
-}*/
 
 .projects-background {
   background-color: rgba(132, 7, 99, .3);
@@ -98,7 +94,6 @@ big {
   margin: auto;
 }
 
-
 .about-me {
   background-image: url('../imgs/lukasz-szmigiel-11413.jpg');
   background-size: cover;
@@ -106,7 +101,7 @@ big {
 }
 
 .about-me p {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .about-background {
@@ -139,6 +134,10 @@ big {
 
 .card-content {
   background: #2d2d2d;
+}
+
+.card-content p {
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
