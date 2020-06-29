@@ -1,4 +1,4 @@
-let myprojects = [
+const myprojects = [
   {
     title : "Crypto-Exchange",
     link : "https://pure-headland-49327.herokuapp.com/",
@@ -14,47 +14,28 @@ let myprojects = [
   {
     title : "Junket!",
     link : "https://vast-falls-69882.herokuapp.com/",
-    picture : "http://www.travelweekly.com/uploadedImages/All_TW_Art/2016/032816/T0328COVERILLO2_HR.jpg?n=3385&width=1540&height=866&mode=crop&Anchor=MiddleCenter",
+    picture : "https://www.travelweekly.com/uploadedImages/All_TW_Art/2016/032816/T0328COVERILLO2_HR.jpg?n=3385&width=1540&height=866&mode=crop&Anchor=MiddleCenter",
     description : "Check out Junket! to get travel tips for any upcoming destinations. Log in to share you own experiences and interact with other users."
   }];
 
-
-
-
 $(document).ready(function(){
-
-  console.log('working :)');
-  console.log(myprojects[0].title);
-
   $(".button-collapse").sideNav();
-
-  let $projectCards = $('.project-cards');
-  let newHTML;
+  const $projectCards = $('.project-cards');
   myprojects.forEach((project) => {
-    newHTML = `
+    const newHTML = `
     <div class="col s12 m6 l6">
-      <a href="${project.link}">
+      <a href="${project.link}" target="_blank">
       <div class="card">
         <div class="card-image">
           <img src="${project.picture}">
-          <span class="card-title">${project.title}</span>
+          <span class="card-title cardTitle">${project.title}</span>
         </div>
-        <div class="card-content">
+        <div class="card-content cardContent">
           <p>${project.description}</p>
         </div>
       </div>
     </div>`;
 
-
-    console.log(newHTML);
     $projectCards.append(newHTML);
   });
-
-
-
-
-
-
-
-
 });

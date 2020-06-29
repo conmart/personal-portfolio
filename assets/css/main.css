@@ -17,7 +17,7 @@ nav li {
 
 header {
   text-align: center;
-  background-image: url('../imgs/luca-bravo-207676.jpg');
+  background-image: url('../imgs/computer-at-desk.jpg');
   background-size: cover;
 }
 
@@ -60,6 +60,10 @@ big {
   padding-left: 35px;
 }
 
+#projects {
+  color: black;
+}
+
 .nav-bar {
   text-align: center;
 }
@@ -78,14 +82,8 @@ big {
   margin: 200px 0 20px 0;
 }
 
-.my-projects {
-  background-image: url('../imgs/jordan-gellie-33556.jpg');
-  background-size: cover;
-}
-
-
-.projects-background {
-  background-color: rgba(132, 7, 99, .3);
+.projects {
+  background-color: #6caef5;
 }
 
 
@@ -95,7 +93,7 @@ big {
 }
 
 .about-me {
-  background-image: url('../imgs/lukasz-szmigiel-11413.jpg');
+  background-image: url('../imgs/forest-sm.jpg');
   background-size: cover;
 
 }
@@ -110,33 +108,28 @@ big {
 
 .contact-info {
   align-items: center;
-  background-image: url('../imgs/michal-grosicki-221225.jpg');
-  background-size: cover;
+  background-color: #0d0d0d;
 }
 
 .contact-info a {
   text-decoration: underline;
 }
 
-.contact-background {
-  background-color: rgba(0, 0, 0, .5);
-}
-
 .container {
   padding-bottom: 25px;
 }
 
-.card-title {
+.cardTitle {
   background: rgba(0,0,0,.5);
-  border-radius: 10px;
-  padding: 10px !important;
+  border-radius: 0 10px 0 0;
+  padding: 10px;
 }
 
-.card-content {
+.cardContent {
   background: #2d2d2d;
 }
 
-.card-content p {
+.cardContent p {
   font-size: 20px;
 }
 
