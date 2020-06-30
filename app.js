@@ -23,7 +23,7 @@ $(document).ready(function(){
   const $projectCards = $('.project-cards');
   myprojects.forEach((project) => {
     const newHTML = `
-    <div class="col s12 m6 l6">
+    <div class="col s12 m6 xl3">
       <a href="${project.link}" target="_blank">
       <div class="card">
         <div class="card-image">
