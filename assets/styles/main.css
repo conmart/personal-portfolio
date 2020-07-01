@@ -187,10 +187,10 @@ a.linkedInIcon {
 
 .projectCard {
   display: flex;
-  width: 49%;
+  width: 48%;
   color: white;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .projectCard img {
@@ -257,6 +257,16 @@ a.linkedInIcon {
     height: unset;
     width: unset;
   }
+
+  #projectRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    width: 560px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -264,131 +274,3 @@ a.linkedInIcon {
     display: block;
   }
 }
-
-/* nav {
-  background-color: rgba(0, 0, 0, 0.25);
-  margin: 0;
-  padding: 2px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-nav li {
-  margin: 0 20px;
-  text-decoration: none;
-}
-
-header {
-  text-align: center;
-  background-image: url('../imgs/computer-at-desk.jpg');
-  background-size: cover;
-}
-
-h1 {
-  font-family: Oswald, sans-serif;
-  font-size: 50px;
-  letter-spacing: 5px;
-  margin: 0;
-  padding: 40px;
-  padding-bottom: 70px;
-}
-
-body {
-  color: white;
-}
-
-h2 {
-  font-size: 40px;
-  padding: 25px 0px;
-  margin: 0;
-}
-
-main {
-  font-family: 'Muli', sans-serif;
-}
-
-li {
-  font-size: 25px;
-}
-
-a {
-  color: inherit;
-}
-
-h4 {
-  font-size: 25px;
-}
-
-big {
-  padding-left: 35px;
-}
-
-.nav-bar {
-  text-align: center;
-}
-
-.brand-logo {
-  margin-left: 20px;
-}
-
-.headshot {
-  border-radius: 40px;
-  border: solid;
-  border-color: black;
-  border-width: 5px;
-  height: 300px;
-  width: auto;
-  margin: 200px 0 20px 0;
-}
-
-.projects {
-  background-color: #17668a;
-}
-
-.display-projects h4 {
-  padding: 15px;
-  margin: auto;
-}
-
-.about-me p {
-  font-size: 22px;
-}
-
-.contact-info {
-  align-items: center;
-  background-color: #0d0d0d;
-}
-
-.contact-info a {
-  text-decoration: underline;
-}
-
-.cardTitle {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 0 10px 0 0;
-  padding: 10px;
-}
-
-.cardContent {
-  background: #2d2d2d;
-}
-
-.cardContent p {
-  font-size: 20px;
-}
-
-.containerWrap {
-  padding: 30px 0 40px;
-}
-
-@media (max-width: 600px) {
-  .headshot {
-    margin-top: 65px;
-  }
-
-  header h1 {
-    padding: 25px;
-  }
-} */
