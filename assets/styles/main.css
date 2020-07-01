@@ -170,6 +170,46 @@ a.linkedInIcon {
   font-size: 26px;
 }
 
+@media (max-width: 975px) {
+  .headshot, .resumeContainer svg {
+    display: none;
+  }
+
+  .name, .title, .resumeRow {
+    display: block;
+    position: relative;
+    left: 0;
+    top: unset;
+    width: unset;
+  }
+
+  .contentBox {
+    height: unset;
+    width: unset;
+    text-align: left;
+    padding: 0 12px;
+  }
+
+  .icons {
+    display: flex;
+    text-align: center;
+    width: 150px;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+  }
+
+  .resumeContainer {
+    height: unset;
+    width: unset;
+  }
+}
+
+@media (max-width: 550px) {
+  .label {
+    display: block;
+  }
+}
+
 /* nav {
   background-color: rgba(0, 0, 0, 0.25);
   margin: 0;
