@@ -117,9 +117,24 @@ body {
   padding-left: 25px;
 }
 
+.iconRow img {
+  height: 32px;
+}
+
 .skills {
   top: 96px;
   left: -92px;
+}
+
+a.linkedInIcon {
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  text-decoration: none;
+  font-size: 26px;
 }
 
 /* nav {
