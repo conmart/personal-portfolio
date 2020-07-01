@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Connor Martinelli</title>
-  <!-- meta -->
-  <meta charset="utf-8" />
-  <meta name="description" content="Personal Site">
-  <meta name="author" content="GA Student">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <!-- mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- styles -->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <!-- scripts -->
+  <head>
+    <title>Connor Martinelli</title>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal Site" />
+    <meta name="author" content="GA Student" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <!-- mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- styles -->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+    <!-- scripts -->
 
-  <!-- jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery Library -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script> -->
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  <script src="app.js"></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
 
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <!-- icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <nav class="hide-on-small-and-down">
+  <body>
+    <!-- <nav class="hide-on-small-and-down">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo left">CM</a>
       <ul class="right">
@@ -48,54 +53,96 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
-  <header>
-    <img class="headshot" src="assets/imgs/VertBrickSmall.jpeg" alt="Connor headshot">
-    <div class="page-wrapper">
-      <h1>Connor Martinelli | Full Stack Engineer</h1>
-    </div>
-  </header>
-
-  <main>
-    <div class="projects containerWrap">
-      <div class="display-projects container">
-        <h2 id="projects">Projects</h2>
-        <div class="row project-cards"></div>
+    <main>
+      <div class="pageSection">
+        <div class="container overview">
+          <div class="headshot">
+            <div class="headshotBackground"></div>
+            <img
+              src="assets/imgs/VertBrickSmall.jpeg"
+              alt="Connor's headshot"
+            />
+            <div class="headshotBackground"></div>
+          </div>
+          <div class="resumeContainer">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
+            </svg>
+            <div class="contentBox">
+              <h1>Connor Martinelli</h1>
+              <h3>
+                Full Stack Software Engineer |
+                <a href="assets/documents/ConnorMartinelli_Resume.pdf"
+                  >Resume</a
+                >
+              </h3>
+            </div>
+            <svg class="inverse" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
+            </svg>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-me containerWrap" >
+      <div class="projects containerWrap">
+        <div class="display-projects container">
+          <h2 id="projects">Projects</h2>
+          <div class="row project-cards"></div>
+        </div>
+      </div>
+
+      <div class="about-me containerWrap">
         <div class="about-content container">
           <h2 id="about">About Me</h2>
           <p>
-            Rural ranch hand turned web developer after a stint in sales, my love for code comes from the combination of complex logic and the ability to build almost anything.  That rush of dopamine from finding an elegant solution to a difficult problem is hard to beat.
+            Rural ranch hand turned web developer after a stint in sales, my
+            love for code comes from the combination of complex logic and the
+            ability to build almost anything. That rush of dopamine from finding
+            an elegant solution to a difficult problem is hard to beat.
           </p>
           <p>
-            Self proclaimed philosopher, futurist, consumer of art, athlete, human. Also, I like beer.
+            Self proclaimed philosopher, futurist, consumer of art, athlete,
+            human. Also, I like beer.
           </p>
           <p>
             Skills: HTML, CSS, JavaScript, MongoDB, Ruby, Rails, PosgreSQL
           </p>
         </div>
-    </div>
-
-
-
-    <div class="contact-info containerWrap">
-      <div class="container">
-        <h2 id="contact">Contact Info</h2>
-        <ul>
-          <li>Connect with me on <a href="https://www.linkedin.com/in/connormartinelli/">LinkedIn</a></li>
-          <li>Visit my <a href="https://www.linkedin.com/in/connormartinelli/">GitHub Page</a> for more of my work</li>
-          <li><a href="mailto:connor.a.martinelli@gmail.com"><span class="material-icons">
-            email
-          </span></a></li>
-          <li><a href="assets/documents/ConnorMartinelli__Resume.pdf">Resume</a></li>
-        </ul>
       </div>
-    </div>
-  </main>
 
-</body>
+      <div class="contact-info containerWrap">
+        <div class="container">
+          <h2 id="contact">Contact Info</h2>
+          <ul>
+            <li>
+              Connect with me on
+              <a href="https://www.linkedin.com/in/connormartinelli/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              Visit my
+              <a href="https://www.linkedin.com/in/connormartinelli/"
+                >GitHub Page</a
+              >
+              for more of my work
+            </li>
+            <li>
+              <a href="mailto:connor.a.martinelli@gmail.com"
+                ><span class="material-icons">
+                  email
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="assets/documents/ConnorMartinelli__Resume.pdf">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>

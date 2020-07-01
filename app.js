@@ -18,24 +18,30 @@ const myprojects = [
     description : "Check out Junket! to get travel tips for any upcoming destinations. Log in to share you own experiences and interact with other users."
   }];
 
-$(document).ready(function(){
-  $(".button-collapse").sideNav();
-  const $projectCards = $('.project-cards');
-  myprojects.forEach((project) => {
-    const newHTML = `
-    <div class="col s12 m6 xl3">
-      <a href="${project.link}" target="_blank">
-      <div class="card">
-        <div class="card-image">
-          <img src="${project.picture}">
-          <span class="card-title cardTitle">${project.title}</span>
-        </div>
-        <div class="card-content cardContent">
-          <p>${project.description}</p>
-        </div>
-      </div>
-    </div>`;
+// $(document).ready(function(){
+//   $(".button-collapse").sideNav();
+//   const $projectCards = $('.project-cards');
+//   myprojects.forEach((project) => {
+//     const newHTML = `
+//     <div class="col s12 m6 xl3">
+//       <a href="${project.link}" target="_blank">
+//       <div class="card">
+//         <div class="card-image">
+//           <img src="${project.picture}">
+//           <span class="card-title cardTitle">${project.title}</span>
+//         </div>
+//         <div class="card-content cardContent">
+//           <p>${project.description}</p>
+//         </div>
+//       </div>
+//     </div>`;
 
-    $projectCards.append(newHTML);
-  });
+//     $projectCards.append(newHTML);
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('js connected')
+  var testing = 'hello there';
+  document.getElementById('projects').innerHTML = testing;
 });
