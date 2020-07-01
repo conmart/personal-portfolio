@@ -81,7 +81,7 @@ body {
 .contentBox {
   color: white;
   position: relative;
-  width: 315px;
+  width: 318px;
 }
 
 .contentBox a {
@@ -91,39 +91,72 @@ body {
 
 .name {
   position: absolute;
-  left: -173px;
-  top: -8px;
+  left: -165px;
 }
 
 .title {
   position: absolute;
   left: -133px;
-  top: 45px;
+  top: 53px;
 }
 
 .resumeRow {
   position: absolute;
   display: flex;
+  width: 450px;
 }
 
 .resumeRow p {
   font-size: 18px;
 }
 
-.iconRow {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 25px;
-}
-
-.iconRow img {
-  height: 32px;
-}
-
 .skills {
   top: 96px;
-  left: -92px;
+  left: -88px;
+}
+
+.companies {
+  top: 135px;
+  left: -43px;
+}
+
+.education {
+  top: 174px;
+}
+
+.label {
+  padding-right: 15px;
+}
+
+.icons {
+  top: 246px;
+  left: 97px;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+
+.envelope {
+  position: relative;
+  height: 32px;
+  width: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 3px;
+}
+
+.envelope::after {
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  content: '';
+  transform: rotate(45deg);
+  left: 5px;
+  top: -13px;
+  position: absolute;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 
 a.linkedInIcon {
