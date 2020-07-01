@@ -81,11 +81,45 @@ body {
 .contentBox {
   color: white;
   position: relative;
+  width: 315px;
 }
 
 .contentBox a {
   color: white;
   text-decoration: underline;
+}
+
+.name {
+  position: absolute;
+  left: -173px;
+  top: -8px;
+}
+
+.title {
+  position: absolute;
+  left: -133px;
+  top: 45px;
+}
+
+.resumeRow {
+  position: absolute;
+  display: flex;
+}
+
+.resumeRow p {
+  font-size: 18px;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.skills {
+  top: 96px;
+  left: -92px;
 }
 
 /* nav {
