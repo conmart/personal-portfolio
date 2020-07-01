@@ -38,20 +38,10 @@
   </head>
 
   <body>
-    <!-- <nav class="hide-on-small-and-down">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo left">CM</a>
-      <ul class="right">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav> -->
-
     <main>
-      <div class="pageSection">
-        <div class="container overview">
+      <div class="resumeSection">
+        <div class="container">
+          <!-- Headshot -->
           <div class="headshot">
             <div class="headshotBackground"></div>
             <img
@@ -61,6 +51,7 @@
             <div class="headshotBackground"></div>
           </div>
 
+          <!-- Resume -->
           <div class="resumeContainer">
             <svg xmlns="http://www.w3.org/2000/svg">
               <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
@@ -106,16 +97,49 @@
         </div>
       </div>
 
-      <div class="projects containerWrap">
-        <div class="display-projects container">
-          <h2 id="projects">Projects</h2>
-          <div class="row project-cards"></div>
+      <!-- Projects -->
+      <div class="projectSection">
+        <div class="container">
+          <h2>Projects</h2>
+          <hr />
+          <div id="projectRow">
+            <a class="projectCard" href="https://www.google.com" target="_blank">
+              <img src="assets/imgs/Dayta-cal.png" />
+              <div class="projectInfo">
+                <div class="projectTitle">
+                  title
+                </div>
+                <div class="description">
+                  Description to go here
+                </div>
+                <div class="tech">
+                  Build with tech
+                </div>
+              </div>
+            </a>
+            <div class="projectCard">
+              <img src="assets/imgs/nim.png" />
+              <div class="projectInfo">
+                <div class="projectTitle">
+                  title
+                </div>
+                <div class="description">
+                  Description to go here
+                </div>
+                <div class="tech">
+                  Build with tech
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
         </div>
       </div>
 
-      <div class="about-me containerWrap">
-        <div class="about-content container">
-          <h2 id="about">About Me</h2>
+      <!-- About -->
+      <div class="about">
+        <div class="container">
+          <h2>About Me</h2>
           <p>
             Rural ranch hand turned web developer after a stint in sales, my
             love for code comes from the combination of complex logic and the
@@ -126,42 +150,9 @@
             Self proclaimed philosopher, futurist, consumer of art, athlete,
             human. Also, I like beer.
           </p>
-          <p>
-            Skills: HTML, CSS, JavaScript, MongoDB, Ruby, Rails, PosgreSQL
-          </p>
         </div>
       </div>
 
-      <div class="contact-info containerWrap">
-        <div class="container">
-          <h2 id="contact">Contact Info</h2>
-          <ul>
-            <li>
-              Connect with me on
-              <a href="https://www.linkedin.com/in/connormartinelli/"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              Visit my
-              <a href="https://www.linkedin.com/in/connormartinelli/"
-                >GitHub Page</a
-              >
-              for more of my work
-            </li>
-            <li>
-              <a href="mailto:connor.a.martinelli@gmail.com"
-                ><span class="material-icons">
-                  email
-                </span></a
-              >
-            </li>
-            <li>
-              <a href="assets/documents/ConnorMartinelli__Resume.pdf">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </main>
     <script src="app.js"></script>
   </body>

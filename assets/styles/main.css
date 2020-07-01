@@ -3,23 +3,23 @@ body {
 
   /* colors */
   --color-blue: #6B7FD7;
+  --color-charcoal: #212121;
   --color-purple: #4C2A85;
   --color-dk-purple: #320E3B;
 }
 
-.pageSection {
-  width: 100%;
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 55px 30px;
+  color: white;
+}
+
+.resumeSection {
   background-color: var(--color-purple);
 }
 
-.container {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 55px 30px;
-}
-
-.overview {
+.resumeSection .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,6 @@ body {
 }
 
 .contentBox {
-  color: white;
   position: relative;
   width: 318px;
 }
@@ -134,6 +133,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 300px;
+  text-align: center;
 }
 
 .envelope {
@@ -170,6 +170,63 @@ a.linkedInIcon {
   font-size: 26px;
 }
 
+.projectSection {
+  background-color: black;
+}
+
+.projectSection hr {
+  height: 3px;
+  background-color: white;
+}
+
+#projectRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  display: flex;
+  width: 49%;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.projectCard img {
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.projectInfo {
+  border-radius: 0 5px 5px 0;
+  border: 2px solid;
+  border-left: none;
+  padding: 10px;
+  background-color: var(--color-charcoal);
+}
+
+.projectTitle, .description {
+  border-bottom: 1px solid;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+}
+
+.projectTitle {
+  font-size: 20px;
+}
+
+.description {
+  height: 96px;
+}
+
+.about {
+  background: linear-gradient(rgba(12, 28, 3, 0.7), rgba(12, 28, 3, 0.7)),
+    url('../imgs/forest-sm.jpg');
+  background-size: cover;
+}
+
 @media (max-width: 975px) {
   .headshot, .resumeContainer svg {
     display: none;
@@ -186,13 +243,11 @@ a.linkedInIcon {
   .contentBox {
     height: unset;
     width: unset;
-    text-align: left;
     padding: 0 12px;
   }
 
   .icons {
     display: flex;
-    text-align: center;
     width: 150px;
     justify-content: space-between;
     padding: 10px 0 20px;
@@ -295,12 +350,6 @@ big {
 .display-projects h4 {
   padding: 15px;
   margin: auto;
-}
-
-.about-me {
-  background: linear-gradient(rgba(12, 28, 3, 0.5), rgba(12, 28, 3, 0.5)),
-    url('../imgs/forest-sm.jpg');
-  background-size: cover;
 }
 
 .about-me p {
