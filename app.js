@@ -1,23 +1,3 @@
-// const myProjects = [
-//   {
-//     title : "Crypto-Exchange",
-//     link : "https://pure-headland-49327.herokuapp.com/",
-//     picture : "https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmZ1oqMG55JzH59usAiynrUdamCoGJykacyZsFeHrcSfW2",
-//     description : "Create an account on Crypto-Exchange to get up to date price information for the hottest cryptocurrencies, and $20,000 in fake USD to simulate investing in this new and volitile market."
-//   },
-//   {
-//     title : "Spork",
-//     link : "https://polar-tor-20830.herokuapp.com/",
-//     picture : "https://storage.googleapis.com/lg_meetup_images/street-food-tracking.jpg",
-//     description : "Spork is a social platform where aspiring and veteran chefs can upload, favorite, review, and search recipes. Users can also follow their favorite chefs on the platform to make sure they don't miss out on any new dishes. Bon appetit!"
-//   },
-//   {
-//     title : "Junket!",
-//     link : "https://vast-falls-69882.herokuapp.com/",
-//     picture : "https://www.travelweekly.com/uploadedImages/All_TW_Art/2016/032816/T0328COVERILLO2_HR.jpg?n=3385&width=1540&height=866&mode=crop&Anchor=MiddleCenter",
-//     description : "Check out Junket! to get travel tips for any upcoming destinations. Log in to share you own experiences and interact with other users."
-//   }];
-
 const myProjects = [
   {
     title: 'Dayta, 2020',
@@ -49,6 +29,12 @@ const myProjects = [
   },
 ];
 
+const about = [
+  'I grew up in Sonoma surrounded by beautiful hills and valleys, and lots of vineyards. Lots of vineyards. I spent my summers working on the family ranch doing the glamorous work of mending fences and re-roofing barns. I’m the only one out of my family that is in the tech industry and voluntarily lives in an urban environment. While the current state of affairs has me questioning why I’m paying city rent to stay inside a small apartment all day, ultimately what draws me to away from the country is the same thing that draws me to programing - both represent the cumulative progress of humanity.',
+  'Cities are incredibly complex marvels of engineering. The sheer volume of people crammed into a 7x7 mile block of real estate is unprecedented in human history. Likewise the internet of things, our digital infrastructure that we depend on in this strange era is a constantly evolving explosion of new ideas the likes of which has never before been possible. Here is where the exciting changes are happening, here is where the future will be built.',
+  'Zooming in from the big picture, what keeps me engaged and excited to come to work every day as a developer is the unique combination of skills needed in the role. From my time as a ranch hand I have learned the importance of a strong work ethic, and building quality products that will survive the elements as well as end users. From my time in sales I understand how to work effectively with all the stakeholders of a project and keep everyone happy. And like all developers, I love thinking critically and creatively to both solve and anticipate problems.',
+];
+
 document.addEventListener('DOMContentLoaded', () => {
   let newHTML = '';
   myProjects.forEach(project => {
@@ -67,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       </a>`;
-  })
+  });
   document.getElementById('projectRow').innerHTML = newHTML;
+
+  about.forEach(paragraph => {
+    const pTag = document.createElement('P');
+    const text = document.createTextNode(paragraph);
+    pTag.appendChild(text);
+    document.getElementById('story').appendChild(pTag);
+  });
 });
