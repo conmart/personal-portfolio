@@ -6,7 +6,6 @@ body {
   --color-blue: #6B7FD7;
   --color-charcoal: #212121;
   --color-purple: #4C2A85;
-  --color-dk-purple: #320E3B;
 }
 
 .container {
@@ -17,9 +16,11 @@ body {
 
 .resumeSection {
   background-color: var(--color-purple);
+  overflow: hidden;
 }
 
 .overviewWrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +57,7 @@ body {
 }
 
 .resumeContainer {
+  position: relative;
   height: 300px;
   display: flex;
   background-color: var(--color-blue);
@@ -81,6 +83,7 @@ body {
 .contentBox {
   position: relative;
   width: 318px;
+  z-index: 1;
 }
 
 .contentBox a {
@@ -110,17 +113,18 @@ body {
 }
 
 .skills {
-  top: 96px;
-  left: -88px;
+  top: 101px;
+  left: -86px;
 }
 
 .companies {
-  top: 135px;
-  left: -43px;
+  top: 141px;
+  left: -39px;
 }
 
 .education {
-  top: 174px;
+  top: 181px;
+  left: 8px;
 }
 
 .label {
@@ -129,10 +133,10 @@ body {
 
 .icons {
   top: 246px;
-  left: 97px;
+  left: 122px;
   justify-content: space-around;
   align-items: center;
-  width: 300px;
+  width: 250px;
   text-align: center;
 }
 
@@ -240,6 +244,7 @@ a.linkedInIcon {
   width: 300px;
   padding-top: 30px;
   font-size: 20px;
+  max-width: 100%;
 }
 
 .navBtns a {
@@ -271,6 +276,14 @@ a.linkedInIcon {
   text-align: center;
   font-size: 12px;
   padding: 3px;
+}
+
+.circle {
+  position: absolute;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  height: 0;
+  width: 0;
 }
 
 @media (max-width: 975px) {
@@ -312,6 +325,34 @@ a.linkedInIcon {
   .projectCard {
     width: 560px;
     max-width: 100%;
+  }
+
+  .c1 {
+    height: 65px;
+    width: 65px;
+    top: -12px;
+    right: -20px;
+  }
+
+  .c2 {
+    height: 60px;
+    width: 60px;
+    top: 40%;
+    left: -10px;
+  }
+
+  .c3 {
+    height: 50px;
+    width: 50px;
+    bottom: -24px;
+    left: 15px;
+  }
+
+  .c4 {
+    height: 25px;
+    width: 25px;
+    right: -37px;
+    top: 60%;
   }
 }
 
