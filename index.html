@@ -25,84 +25,97 @@
   <body>
     <main>
       <div class="resumeSection">
-        <div class="container">
+        <div class="container" id="overview">
           <!-- Headshot -->
-          <div class="headshot">
-            <div class="headshotBackground"></div>
-            <img
-              src="assets/imgs/VertBrickSmall.jpeg"
-              alt="Connor's headshot"
-            />
-            <div class="headshotBackground"></div>
-          </div>
-
-          <!-- Resume -->
-          <div class="resumeContainer">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
-            </svg>
-
-            <div class="contentBox">
-              <h1 class="name">Connor Martinelli</h1>
-              <h3 class="title">
-                Full Stack Software Engineer |
-                <a href="assets/documents/ConnorMartinelli_Resume.pdf" target="_blank">
-                  Resume
-                </a>
-              </h3>
-              <div class="resumeRow skills">
-                <p><span class="label">Skills:</span> <code>Javascript, React, Ruby on Rails</code></p>
-              </div>
-              <div class="resumeRow companies">
-                <p><span class="label">Companies:</span> Rooster Grin Media, NerdWallet, Oracle</p>
-              </div>
-              <div class="resumeRow education">
-                <p><span class="label">Education:</span> UC Berkeley, General Assembly</p>
-              </div>
-              <div class="resumeRow icons">
-                <a href="mailto:connor.a.martinelli@gmail.com">
-                  <div class="envelope"></div>
-                </a>
-                <a href="https://github.com/conmart" target="_blank">
-                  <img
-                    src="assets/imgs/GitHub-Mark-Light-32px.png"
-                    alt="GitHub Profile"
-                  />
-                </a>
-                <a class="linkedInIcon" href="https://www.linkedin.com/in/connormartinelli/" target="_blank">
-                  in
-                </a>
-              </div>
+          <div class="overviewWrapper">
+            <div class="headshot">
+              <div class="headshotBackground"></div>
+              <img
+                src="assets/imgs/VertBrickSmall.jpeg"
+                alt="Connor's headshot"
+              />
+              <div class="headshotBackground"></div>
             </div>
 
-            <svg class="inverse" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
-            </svg>
+            <!-- Resume -->
+            <div class="resumeContainer">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
+              </svg>
+
+              <div class="contentBox">
+                <h1 class="name">Connor Martinelli</h1>
+                <h3 class="title">
+                  Full Stack Software Engineer |
+                  <a href="assets/documents/ConnorMartinelli_Resume.pdf" target="_blank">
+                    Resume
+                  </a>
+                </h3>
+                <div class="resumeRow skills">
+                  <p><span class="label">Skills:</span> <code>Javascript, React, Ruby on Rails</code></p>
+                </div>
+                <div class="resumeRow companies">
+                  <p><span class="label">Companies:</span> Rooster Grin Media, NerdWallet, Oracle</p>
+                </div>
+                <div class="resumeRow education">
+                  <p><span class="label">Education:</span> UC Berkeley, General Assembly</p>
+                </div>
+                <div class="resumeRow icons">
+                  <a href="mailto:connor.a.martinelli@gmail.com">
+                    <div class="envelope"></div>
+                  </a>
+                  <a href="https://github.com/conmart" target="_blank">
+                    <img
+                      src="assets/imgs/GitHub-Mark-Light-32px.png"
+                      alt="GitHub Profile"
+                    />
+                  </a>
+                  <a class="linkedInIcon" href="https://www.linkedin.com/in/connormartinelli/" target="_blank">
+                    in
+                  </a>
+                </div>
+              </div>
+
+              <svg class="inverse" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0 0 C 0 150 200 150 200 300 L 0 300 Z" />
+              </svg>
+            </div>
           </div>
 
           <div class="navBtns">
-
+            <a href="#projects">Projects <span class="triangle pointDown"></span></a>
+            <a href="#about">About <span class="triangle pointDown"></span></a>
           </div>
         </div>
       </div>
 
       <!-- Projects -->
       <div class="projectSection">
-        <div class="container">
+        <div class="container" id="projects">
           <h2>Projects</h2>
           <hr />
           <div id="projectRow"></div>
           <hr />
+          <div class="navBtns">
+            <a href="#overview">Summary <span class="triangle pointUp"></span></a>
+            <a href="#about">About <span class="triangle pointDown"></span></a>
+          </div>
         </div>
       </div>
 
       <!-- About -->
       <div class="about">
-        <div class="container" id="story">
+        <div class="container" id="about">
           <h2>About Me</h2>
+          <div id="aboutContent"></div>
+          <div class="navBtns">
+            <a href="#overview">Summary <span class="triangle pointUp"></span></a>
+            <a href="#projects">Projects <span class="triangle pointUp"></span></a>
+          </div>
         </div>
       </div>
 
+      <div class="thanks"> Thanks for visiting :) </div>
     </main>
     <script src="app.js"></script>
   </body>

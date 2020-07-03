@@ -1,5 +1,6 @@
 body {
   font-family: 'Muli', sans-serif;
+  color: white;
 
   /* colors */
   --color-blue: #6B7FD7;
@@ -11,15 +12,14 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1100px;
-  padding: 55px 30px;
-  color: white;
+  padding: 30px;
 }
 
 .resumeSection {
   background-color: var(--color-purple);
 }
 
-.resumeSection .container {
+.overviewWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +194,7 @@ a.linkedInIcon {
 }
 
 .projectCard:first-child {
-  box-shadow: 0px 0px 9px gold;
+  box-shadow: 0px 0px 7px gold;
   border-radius: 5px;
 }
 
@@ -230,6 +230,47 @@ a.linkedInIcon {
   background: linear-gradient(rgba(12, 28, 3, 0.7), rgba(12, 28, 3, 0.7)),
     url('../imgs/forest-sm.jpg');
   background-size: cover;
+  padding-bottom: 30px;
+}
+
+.navBtns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.navBtns a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+.triangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  right: 0;
+}
+
+.pointUp {
+  border-bottom: 10px solid white;
+}
+
+.pointDown {
+  border-top: 10px solid white;
+  top: 10px;
+}
+
+.thanks {
+  background-color: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 3px;
 }
 
 @media (max-width: 975px) {

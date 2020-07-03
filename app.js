@@ -60,6 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const pTag = document.createElement('P');
     const text = document.createTextNode(paragraph);
     pTag.appendChild(text);
-    document.getElementById('story').appendChild(pTag);
+    document.getElementById('aboutContent').appendChild(pTag);
   });
 });
