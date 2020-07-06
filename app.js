@@ -36,6 +36,12 @@ const about = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+  for (let i = 1; i < 5; i++) {
+    const span = document.createElement('SPAN');
+    span.setAttribute('class', `circle c${i}`);
+    document.getElementById('circles').appendChild(span);
+  }
+
   let newHTML = '';
   myProjects.forEach(project => {
     newHTML +=
