@@ -1,12 +1,8 @@
-# My Personal Portfolio
+# Personal Website
 
-This website is designed to showcase my projects and tell the world a little about myself.
+My personal online portfolio for showcasing my projects and sharing a bit about my journey as a developer.
 
 
 ## Built With
 
-Javascript
-CSS
-HTML
-Materialize
-jQuery
+Just for fun I went back to basics with this site and only used one custom file of `js`, `css`, and `html` for everything besides static assets.
