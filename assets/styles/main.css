@@ -272,13 +272,6 @@ a.linkedInIcon {
   top: 10px;
 }
 
-.thanks {
-  background-color: black;
-  text-align: center;
-  font-size: 12px;
-  padding: 3px;
-}
-
 .circle {
   position: absolute;
   background-color: var(--color-blue);
